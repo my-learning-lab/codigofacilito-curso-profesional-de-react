@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  learn:
+    container_name: "${LEARN_CONTAINER_NAME}"
+    image: "${LEARN_IMAGE}"
+    volumes:
+      - .:/code
+    ports:
+      - "${LEARN_HOST_PORT_VITE}:${LEARN_CONTAINER_PORT_VITE}"
+    tty: true

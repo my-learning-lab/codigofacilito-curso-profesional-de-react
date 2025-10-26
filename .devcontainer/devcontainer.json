@@ -1,0 +1,44 @@
+{
+  "name": "curso-profesional-de-react",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "learn",
+  "workspaceFolder": "/code",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "editor.formatOnSave": true,
+        "css.validate": false,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true
+        },
+        "editor.renderWhitespace": "all",
+        "editor.tabSize": 2,
+        "workbench.iconTheme": "vscode-icons",
+        "indentRainbow.colors": [
+          "rgba(0, 0, 0, 0.5)",
+          "rgba(0, 0, 0, 0.4)",
+          "rgba(0, 0, 0, 0.3)",
+          "rgba(0, 0, 0, 0.2)",
+          "rgba(0, 0, 0, 0.1)"
+        ]
+      },
+      "extensions": [
+        "vscode-icons-team.vscode-icons",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "usernamehw.errorlens",
+        "oderwat.indent-rainbow",
+        "jeff-hykin.better-dockerfile-syntax",
+        "mikestead.dotenv",
+        "dsznajder.es7-react-js-snippets",
+        "burkeholland.simple-react-snippets",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  }
+}
