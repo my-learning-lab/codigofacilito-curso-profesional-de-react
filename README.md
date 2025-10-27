@@ -189,7 +189,7 @@ curso-profesional-de-react/
 
 ## 🪴 About
 
-This repository is part of the **Código Facilito** learning path under the  
+This repository is part of the **codigofacilito** learning path under the  
 [My Learning Lab](https://github.com/my-learning-lab) organization —  
 a place to grow in **knowledge, discipline, and purpose**.
 
