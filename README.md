@@ -210,8 +210,8 @@ a place to grow in **knowledge, discipline, and purpose**.
 
 ### 🧭 Next Steps
 
-- [x] Complete module 5
-- [ ] Complete module 6
+- [x] Complete module 6
+- [ ] Complete module 7
 
 ---
 
