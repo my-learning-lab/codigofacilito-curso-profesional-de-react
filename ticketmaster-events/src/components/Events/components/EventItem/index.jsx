@@ -1,7 +1,5 @@
 import styles from "./EventItem.module.css";
 
-console.log(styles);
-
 const EventItem = ({ id, info, name, image, onEventClick }) => {
   const handleSeeMoreClick = (evt) => {
     evt.stopPropagation();
@@ -15,6 +13,7 @@ const EventItem = ({ id, info, name, image, onEventClick }) => {
         <h4 className={styles.eventName}>{name}</h4>
         <p className={styles.eventInfo}>{info}</p>
         <button onClick={handleSeeMoreClick} className={styles.seeMoreBtn}>
+          {/* <Link to={`/detail/${id}`}>Ver más</Link> */}
           Ver más
         </button>
       </div>
