@@ -6,7 +6,7 @@
 ![Learning Path](https://img.shields.io/badge/learning_path-codigofacilito-orange?style=flat-square)
 
 > A hands-on journey into the world of **React** — mastering components, hooks, and real-world app architecture.  
-> Crafted with **faith and diligence**, as part of the *My Learning Lab* initiative.
+> Crafted with **faith and diligence**, as part of the _My Learning Lab_ initiative.
 
 ---
 
@@ -66,6 +66,7 @@ curso-profesional-de-react/
 ### Modules
 
 #### 01 — Introducción
+
 - Intro
 - Qué es React
 - Virtual Dom
@@ -73,24 +74,28 @@ curso-profesional-de-react/
 - Pensando en Componentes
 
 #### 02 — Esenciales I
-- JSX  
-- Componentes  
-- Reactividad  
-- State  
-- Inmutabilidad  
+
+- JSX
+- Componentes
+- Reactividad
+- State
+- Inmutabilidad
 - Props
 
 #### 03 — Vite
+
 - Qué es un Bundler
 - Cómo funciona Vite
 - Creando Proyecto con Vite
 - Cómo Funcionan los Archivos Principales
 
 #### 04 — Presentación del Proyecto
+
 - Descripción del Proyecto
 - Estructura de Carpetas
 
 #### 05 — Escenciales II
+
 - Creando Primer Componente del Proyecto
 - Renderizado Condicional
 - Renderizado de Listas
@@ -111,11 +116,13 @@ curso-profesional-de-react/
 - Cómo Usar useImperativeHandle
 
 #### 06 — Estilos
+
 - Introducción a Estilos
 - Usando CSS
 - Implementando Módulos de CSS
 
 #### 07 — Routing
+
 - Cómo funciona el Routing
 - Qué es el Client Side Routing
 - Configurando Routing en Nuestro Proyecto
@@ -126,6 +133,7 @@ curso-profesional-de-react/
 - Obteniendo Valores de los Parámetros
 
 #### 08 — Fetching
+
 - Obteniendo APIKey de Tickemaster
 - Cómo Funciona el endpoint de Eventos
 - Cómo Funciona fetch
@@ -136,12 +144,14 @@ curso-profesional-de-react/
 - Agregando Variables de Entorno
 
 #### 09 — State Management
+
 - Qué es un State Management
 - Qué es Zustand y Cómo Funciona
 - Instalando Zustand
 - Consumiendo Info de Resultados desde el Detalle
 
 #### 10 — Completando Proyecto
+
 - Agregando ícono de Like y Unlike a los Eventos
 - Agregando Like y Unlike con localStorage
 - Creando Componentes para Eventos Favoritos e Información
@@ -151,6 +161,7 @@ curso-profesional-de-react/
 - Obteniendo Listado de Eventos
 
 #### 11 — Mejorando tu Código
+
 - Qué es memoization
 - Qué es memo
 - Recreación de Funciones
@@ -159,12 +170,14 @@ curso-profesional-de-react/
 - Deps arguments en useEffect
 
 #### 12 — React Concurrente
+
 - Strict Mode
 - ErrorBoundary
 - Suspense
 - useTransition
 
 #### 13 — React19
+
 - Introducción
 - Recordemos formularios
 - Usando un nuevo hook para formularios (useActionState)
@@ -182,7 +195,7 @@ curso-profesional-de-react/
 
 ## ✨ Inspiration
 
-> *“And whatsoever ye do, do it heartily, as to the Lord, and not unto men.”*  
+> _“And whatsoever ye do, do it heartily, as to the Lord, and not unto men.”_  
 > — **Colossians 3:23 (KJV)**
 
 ---
@@ -197,7 +210,8 @@ a place to grow in **knowledge, discipline, and purpose**.
 
 ### 🧭 Next Steps
 
-- [ ] Complete module 5
+- [x] Complete module 5
+- [ ] Complete module 6
 
 ---
 
