@@ -1,14 +1,31 @@
 import styles from "./EventItem.module.css";
 
+import useLikeEvents from "../../../../hooks/useLikeEvents";
+import HeartFilled from "../../../../assets/hearth-filled.png";
+import HeartUnfilled from "../../../../assets/hearth-unfilled.png";
+
 const EventItem = ({ id, info, name, image, onEventClick }) => {
+  const { isEventLiked, toggleEventLike } = useLikeEvents(id);
   const handleSeeMoreClick = (evt) => {
     evt.stopPropagation();
     onEventClick(id);
   };
 
+  const handleHearthClick = () => {
+    toggleEventLike();
+  };
+
   return (
     <div className={styles.eventItemContainer}>
-      <img src={image} alt={name} width={200} height={200} />
+      <div className={styles.imageContainer}>
+        <img
+          src={isEventLiked ? HeartFilled : HeartUnfilled}
+          alt="Hearth button"
+          className={styles.hearthImage}
+          onClick={handleHearthClick}
+        />
+        <img src={image} alt={name} width={200} height={200} />
+      </div>
       <div className={styles.eventInfoContainer}>
         <h4 className={styles.eventName}>{name}</h4>
         <p className={styles.eventInfo}>{info}</p>
