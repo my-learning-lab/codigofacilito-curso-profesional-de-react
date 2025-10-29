@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Navbar from "../../components/Navbar";
 import Events from "../../components/Events";
 import useEventsData from "../../hooks/useEventsData";
@@ -11,9 +11,13 @@ const Home = () => {
   const { data, isLoading, error, fetchEvents } = useEventsResults();
   const events = data?._embedded?.events || [];
   const page = data?.page || {};
-  console.log(page?.totalPages);
+  const [isToggle, setIsToggle] = useState(false);
+
   const [searchTerm, setSearchTerm] = useState("");
   const containerRef = useRef();
+  const fetchMyEventsRef = useRef();
+
+  fetchMyEventsRef.current = fetchEvents;
 
   const handleNavbarSearch = (term) => {
     console.log(containerRef.current.setSearch(""));
@@ -21,13 +25,16 @@ const Home = () => {
     fetchEvents(`&keyword=${term}`);
   };
 
-  const handlePageClick = ({ selected }) => {
-    console.log(selected);
-    fetchEvents(`&keyword=${searchTerm}&page=${selected}`);
-  };
+  const handlePageClick = useCallback(
+    ({ selected }) => {
+      console.log(searchTerm);
+      fetchEvents(`&keyword=${searchTerm}&page=${selected}`);
+    },
+    [searchTerm, fetchEvents]
+  );
 
   useEffect(() => {
-    fetchEvents();
+    fetchMyEventsRef.current();
   }, []);
 
   const renderEvents = () => {
@@ -41,6 +48,9 @@ const Home = () => {
 
     return (
       <div>
+        <button onClick={() => setIsToggle(!isToggle)}>
+          {isToggle ? "ON" : "OFF"}
+        </button>
         <Events searchTerm={searchTerm} events={events} />
         <ReactPaginate
           className={styles.pagination}

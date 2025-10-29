@@ -21,7 +21,7 @@ const MyInfo = () => {
     } catch (error) {
       console.error(error);
     }
-  }, []);
+  }, [setValue]);
 
   const handleFormSubmit = (data) => {
     try {
